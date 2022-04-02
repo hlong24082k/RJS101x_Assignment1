@@ -45,7 +45,15 @@ class StaffList extends Component {
         const menu = this.props.nhanvien.map((staffs)=>{
             console.log(this.props.socot);
             var x;
-            x = "col-12 col-sm-6 col-md-4 infor";
+            if (this.props.socot ==3)
+                x  = "col-12 col-sm-6 col-md-4 infor";   
+            else if (this.props.socot ==1)
+                x  = "col-12 col-sm-12 col-md-12 infor";
+            else if (this.props.socot==2)
+                x  = "col-12 col-sm-6 col-md-6 infor";
+            else
+                x  = "col-12 col-sm-5 col-md-2";
+            //x = "col-12 col-sm-6 col-md-4 infor";
                  
             if (this.state.selected_nhanvien!=null){
                 if(this.state.selected_nhanvien.id ==staffs.id){

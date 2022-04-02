@@ -37,3 +37,11 @@
   }
 }
 
+.col{
+  display: inline;
+  margin: 10px;
+}
+.col:hover{
+  color: red;
+  cursor: pointer;
+}
