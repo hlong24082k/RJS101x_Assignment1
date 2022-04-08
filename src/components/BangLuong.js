@@ -11,14 +11,14 @@ function BangLuong(props){
     function aa(search){
         // let val1 = event.target.value;
         // if (val1 == 2){
-            
+            let testdata = [ ...salary];
             if(search === 'tang'){
                 
-                setSalary(salary.sort(function(a,b){
+                setSalary(testdata.sort(function(a,b){
                     return  a.luong - b.luong;
                 }));
             }else if(search === 'giam'){
-                setSalary(salary.sort(function(a,b){
+                setSalary(testdata.sort(function(a,b){
                     return  b.luong - a.luong ;
                 }));
             }
