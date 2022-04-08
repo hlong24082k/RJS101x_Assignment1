@@ -37,11 +37,64 @@
   }
 }
 
-.col{
-  display: inline;
-  margin: 10px;
+
+.row-header{
+  margin:0px auto;
+  padding:0px auto;
 }
-.col:hover{
-  color: red;
-  cursor: pointer;
+
+
+
+.row-content {
+  margin:0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height:400px;
+}
+
+.footer{
+  background-color: #d8dee3;
+  margin:0px auto;
+  padding: 20px 0px 20px 0px;
+  height: 230px;
+}
+
+.footer li a{
+  text-decoration: none;
+}
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+
+.navbar-dark {
+    background-color: #512DA8;
+}
+
+.Breadcrumb{
+  background-color: #e9ecef;
+}
+
+#header-logo{
+  color: #0f0f0f;
+}
+
+/*home*/
+.infor{
+  margin: 15px 0px;
+}
+
+/*phong ban*/
+.infor-pb{
+  margin-bottom: 30px;
+}
+.infor-pb>div{
+  margin: 10px 0px;
+}
+
+/*detail staff*/
+.infor-detail{
+  margin-bottom: 15px;
 }
