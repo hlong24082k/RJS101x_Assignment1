@@ -24,7 +24,7 @@ function Main() {
 
     return(
         <div>
-            <Header/>
+            <Header staff = {staffs}/>
             <Routes>
                 <Route path='/'  element={<Home staffs={staffs} />} />
                 <Route exact path='/nhansu' element={<Home staffs={staffs}/>} />

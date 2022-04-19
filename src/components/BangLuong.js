@@ -24,6 +24,20 @@ function BangLuong(props){
             }
     }
 
+    function bb(event){
+        let val1 = event.target.value;
+        let testdata = [ ...salary];
+        if (val1 == 1){
+            setSalary(testdata.sort(function(a,b){
+                return  a.luong - b.luong;
+            }));
+        } else if(val1 == 2){
+            setSalary(testdata.sort(function(a,b){
+                return  b.luong - a.luong ;
+            }));
+        }
+    }
+
     function tinhLuong (staff){
         let x = staff.salaryScale * 3000000 + staff.overTime * 200000;
         staff.luong = x;
@@ -69,8 +83,13 @@ function BangLuong(props){
             </div>
             <div className="row">
                 <div className="col-12">
-                <p onClick={() => aa("tang")}>sua doi tăng</p>
-                <p onClick={() => aa("giam")}>sua doi giam</p>     
+                
+
+                <Form.Select aria-label="Default select example" onChange={bb}>
+                    <option>Lựa chọn sắp xếp</option>
+                    <option value="1">Tăng dần</option>
+                    <option value="2">Giảm dần</option>
+                </Form.Select>    
                 </div>
                 {bangLuongPage}
             </div>

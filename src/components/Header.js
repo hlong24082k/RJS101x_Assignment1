@@ -1,14 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 
 import { NavLink } from "react-router-dom";
 import {  Container, Navbar, Nav} from 'react-bootstrap';
 
-
-class Header extends Component{
-    
-    render() {
-        return(
-            <div>
+function Header (props){
+    return(
+        <div>
                 <Navbar bg="light" expand="md">
                     <Container>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -22,11 +19,10 @@ class Header extends Component{
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
+                
+                
             </div>
-            
-        );
-        }
-    }
-
+    )
+}
 
 export default Header;
